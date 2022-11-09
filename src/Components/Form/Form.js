@@ -1,6 +1,3 @@
-import { useState } from "react";
-import ReactDropdown from "react-dropdown";
-import DropdownList from "../DropwdownList/DropdownList";
 import "./Form.css";
 
 const Form = ({ filterDrinks }) => {
