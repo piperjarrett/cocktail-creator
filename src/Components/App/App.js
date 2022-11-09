@@ -1,9 +1,10 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 import Form from "../Form/Form";
-import CocktailContainer from "./CocktailContainer/CocktailContainer";
+import CocktailContainer from "../CocktailContainer/CocktailContainer";
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import DrinkInfo from "../DrinkInfo/DrinkInfo";
 
 function App() {
   const [cocktails, setCocktails] = useState([]);
@@ -38,16 +39,43 @@ function App() {
     setFilteredCocktails(filteredDrinks);
   };
 
-  return (
+  return error ? (
+    <div className="spinner-container">
+      <div className="loading-spinner"></div>
+    </div>
+  ) : (
     <Router>
       <main className="App">
         <header className="App-header">
           <h1>Cocktail Creator</h1>
-          <Route exact path="/">
-            <Form cocktails={cocktails} filterDrinks={filterDrinks} />
-            <CocktailContainer filteredCocktails={filteredCocktails} />
-          </Route>
         </header>
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={() => (
+              // return (
+              <div className="home-page">
+                <Form cocktails={cocktails} filterDrinks={filterDrinks} />
+                <CocktailContainer filteredCocktails={filteredCocktails} />
+              </div>
+              // );
+            )}
+          />
+          <Route
+            path="/cocktails/:cocktail"
+            render={
+              ({ match }) => (
+                // return (
+                <DrinkInfo
+                  cocktails={cocktails}
+                  cocktailName={match.params.cocktail}
+                />
+              )
+              // );
+            }
+          />
+        </Switch>
       </main>
     </Router>
   );
