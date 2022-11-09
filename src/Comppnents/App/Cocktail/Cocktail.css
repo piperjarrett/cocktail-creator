@@ -1,1 +1,10 @@
+.cocktail {
+    border: 2px solid;
+    margin: 2rem;
+}
 
+img {
+    width: 12rem;
+    height: 16rem;
+    margin: 2rem;
+}

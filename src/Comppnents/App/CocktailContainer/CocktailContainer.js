@@ -1,6 +1,6 @@
 import Cocktail from "../Cocktail/Cocktail";
-import Form from "../../Form/Form";
-import { useEffect, useState } from "react";
+import "./CocktailContainer.css";
+
 const CocktailContainer = ({ filteredCocktails }) => {
   const allCocktails = filteredCocktails.map((cocktail) => {
     return <Cocktail cocktail={cocktail} />;
