@@ -54,26 +54,17 @@ function App() {
             exact
             path="/"
             render={() => (
-              // return (
               <div className="home-page">
                 <Form cocktails={cocktails} filterDrinks={filterDrinks} />
                 <CocktailContainer filteredCocktails={filteredCocktails} />
               </div>
-              // );
             )}
           />
           <Route
             path="/cocktails/:cocktail"
-            render={
-              ({ match }) => (
-                // return (
-                <DrinkInfo
-                  cocktails={cocktails}
-                  cocktailName={match.params.cocktail}
-                />
-              )
-              // );
-            }
+            render={({ match }) => (
+              <DrinkInfo cocktailName={match.params.cocktail} />
+            )}
           />
         </Switch>
       </main>

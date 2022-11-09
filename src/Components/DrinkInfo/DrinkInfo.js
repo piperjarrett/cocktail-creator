@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./DrinkInfo.css";
 
 const DrinkInfo = ({ cocktailName }) => {
   const [Onecocktail, setOneCocktail] = useState({});
@@ -10,16 +11,72 @@ const DrinkInfo = ({ cocktailName }) => {
       .catch((err) => setError(err.message));
   }, []);
 
-  return Onecocktail ? (
+  const patchRequest = (event) => {
+    console.log(Onecocktail);
+    console.log(event.target.value);
+    // fetch(`http://localhost:3001/api/vi/${Onecocktail.name}`, {
+    //   method: "PATCH",
+    //   headers: { "content-type": "application/json" },
+    //   body: JSON.stringify({
+    //     id: Onecocktail.id,
+    //     name: Onecocktail.name,
+    //     ingredients: Onecocktail.ingredients,
+    //     recipe: Onecocktail.recipe,
+    //     directions: Onecocktail.directions,
+    //     image: Onecocktail.image,
+    //     rating: event.target.value,
+    //   }),
+    // });
+  };
+
+  return (
     <div className="cocktail-info">
       <h1>{Onecocktail.name}</h1>
       <img src={Onecocktail.image} />
       <p>{Onecocktail.recipe}</p>
       <p>{Onecocktail.directions}</p>
-    </div>
-  ) : (
-    <div className="spinner-container">
-      <div className="loading-spinner"></div>
+      <div className="rating">
+        <input
+          id="rating1"
+          type="radio"
+          name="rating"
+          value="1"
+          onClick={(event) => patchRequest(event)}
+        />
+        <label htmlFor="rating1"></label>
+        <input
+          id="rating2"
+          type="radio"
+          name="rating"
+          value="2"
+          onClick={(event) => patchRequest(event)}
+        />
+        <label htmlFor="rating2"></label>
+        <input
+          id="rating3"
+          type="radio"
+          name="rating"
+          value="3"
+          onClick={(event) => patchRequest(event)}
+        />
+        <label htmlFor="rating3"></label>
+        <input
+          id="rating4"
+          type="radio"
+          name="rating"
+          value="4"
+          onClick={(event) => patchRequest(event)}
+        />
+        <label htmlFor="rating4"></label>
+        <input
+          id="rating5"
+          type="radio"
+          name="rating"
+          value="5"
+          onClick={(event) => patchRequest(event)}
+        />
+        <label htmlFor="rating5"></label>
+      </div>
     </div>
   );
 };
