@@ -1,10 +1,15 @@
 import "./App.css";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Form from "../Form/Form";
 import CocktailContainer from "../CocktailContainer/CocktailContainer";
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  NavLink,
+} from "react-router-dom";
 import DrinkInfo from "../DrinkInfo/DrinkInfo";
+import PropTypes from "prop-types";
 
 function App() {
   const [cocktails, setCocktails] = useState([]);
@@ -47,7 +52,9 @@ function App() {
     <Router>
       <main className="App">
         <header className="App-header">
-          <h1>Cocktail Creator</h1>
+          <NavLink to="/" style={{ textDecoration: "none" }}>
+            <h1>Cocktail Creator</h1>
+          </NavLink>
         </header>
         <Switch>
           <Route
@@ -71,5 +78,10 @@ function App() {
     </Router>
   );
 }
+
+App.propTypes = {
+  error: PropTypes.string,
+  cocktail: PropTypes.array,
+};
 
 export default App;

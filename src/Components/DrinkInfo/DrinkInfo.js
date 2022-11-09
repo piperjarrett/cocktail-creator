@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./DrinkInfo.css";
+import PropTypes, { string } from "prop-types";
 
 const DrinkInfo = ({ cocktailName }) => {
   const [Onecocktail, setOneCocktail] = useState({});
@@ -81,4 +82,15 @@ const DrinkInfo = ({ cocktailName }) => {
   );
 };
 
+DrinkInfo.propTypes = {
+  id: PropTypes.number,
+  name: PropTypes.string,
+  ingredients: PropTypes.arrayOf(string),
+  recipe: PropTypes.string,
+  directions: PropTypes.string,
+  image: PropTypes.string,
+  rating: PropTypes.number,
+  Onecocktail: PropTypes.object,
+  cocktailName: string,
+};
 export default DrinkInfo;

@@ -1,6 +1,6 @@
 import Cocktail from "../Cocktail/Cocktail";
 import "./CocktailContainer.css";
-import { Link, NavLink } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const CocktailContainer = ({ filteredCocktails }) => {
   const allCocktails = filteredCocktails.map((cocktail) => {
@@ -11,6 +11,11 @@ const CocktailContainer = ({ filteredCocktails }) => {
     );
   });
   return <div className="cocktail-container">{allCocktails}</div>;
+};
+
+CocktailContainer.propTypes = {
+  filteredCocktails: PropTypes.array,
+  cocktail: PropTypes.object,
 };
 
 export default CocktailContainer;

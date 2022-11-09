@@ -1,4 +1,5 @@
 import "./Form.css";
+import PropTypes, { string } from "prop-types";
 
 const Form = ({ filterDrinks }) => {
   const handleChange = (event) => {
@@ -14,6 +15,10 @@ const Form = ({ filterDrinks }) => {
       />
     </form>
   );
+};
+
+Form.propTypes = {
+  filterDrinks: PropTypes.func,
 };
 
 export default Form;
