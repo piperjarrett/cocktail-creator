@@ -2,6 +2,8 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import Form from "../Form/Form";
 import CocktailContainer from "./CocktailContainer/CocktailContainer";
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   const [cocktails, setCocktails] = useState([]);
@@ -12,9 +14,7 @@ function App() {
     fetch("http://localhost:3001/api/vi/cocktails")
       .then((resp) => resp.json())
       .then((data) => setCocktails(data.cocktails))
-      // .then((data) => setFilteredCocktails(data.cocktails))
       .catch((err) => setError(err.message));
-    // createInputs();
   }, []);
 
   useEffect(() => {
@@ -22,29 +22,34 @@ function App() {
   }, [cocktails]);
 
   const filterDrinks = (input) => {
-    console.log(input);
-    let woohoo = [];
-    const filter = cocktails.forEach((cocktail) => {
+    let filteredDrinks = [];
+    cocktails.forEach((cocktail) => {
       cocktail.ingredients.forEach((ingredient) => {
-        if (input === "") {
-          woohoo = cocktails;
-        } else if (ingredient.includes(input) && !woohoo.includes(cocktail)) {
-          woohoo.push(cocktail);
+        if (input.toLowerCase() === "") {
+          filteredDrinks = cocktails;
+        } else if (
+          ingredient.toLowerCase().includes(input.toLowerCase()) &&
+          !filteredDrinks.includes(cocktail)
+        ) {
+          filteredDrinks.push(cocktail);
         }
       });
     });
-    console.log(woohoo);
-    setFilteredCocktails(woohoo);
+    setFilteredCocktails(filteredDrinks);
   };
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Cocktail Creator</h1>
-        <Form cocktails={cocktails} filterDrinks={filterDrinks} />
-        <CocktailContainer filteredCocktails={filteredCocktails} />
-      </header>
-    </div>
+    <Router>
+      <main className="App">
+        <header className="App-header">
+          <h1>Cocktail Creator</h1>
+          <Route exact path="/">
+            <Form cocktails={cocktails} filterDrinks={filterDrinks} />
+            <CocktailContainer filteredCocktails={filteredCocktails} />
+          </Route>
+        </header>
+      </main>
+    </Router>
   );
 }
 

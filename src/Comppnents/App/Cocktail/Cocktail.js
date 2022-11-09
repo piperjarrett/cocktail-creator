@@ -1,15 +1,14 @@
 import "./Cocktail.css";
 
 const Cocktail = ({ cocktail }) => {
-  console.log(cocktail.ingredients);
-  const ingredients = cocktail.ingredients.map((ingridient) => {
-    return <p>{ingridient}</p>;
+  const ingredients = cocktail.ingredients.map((ingredient) => {
+    return <p key={ingredient}>{ingredient}</p>;
   });
   return (
     <div className="cocktail">
       <img src={cocktail.image} />
       <h4>{cocktail.name}</h4>
-      <p>{ingredients}</p>
+      {ingredients}
     </div>
   );
 };

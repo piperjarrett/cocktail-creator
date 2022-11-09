@@ -3,7 +3,11 @@ import "./CocktailContainer.css";
 
 const CocktailContainer = ({ filteredCocktails }) => {
   const allCocktails = filteredCocktails.map((cocktail) => {
-    return <Cocktail cocktail={cocktail} />;
+    return (
+      <div key={cocktail.id}>
+        <Cocktail cocktail={cocktail} />;
+      </div>
+    );
   });
   return <div className="cocktail-container">{allCocktails}</div>;
 };
