@@ -3,21 +3,24 @@ import ReactDropdown from "react-dropdown";
 import DropdownList from "../DropwdownList/DropdownList";
 import "./Form.css";
 
-const Form = ({ juices, alcohols, garnishes }) => {
-  const [ingredient1, setIngredient1] = useState("");
-  const [ingredient2, setIngredient2] = useState("");
-  const [ingredient3, setIngredient3] = useState("");
+const Form = ({ cocktails, filterDrinks }) => {
+  const [input, setInput] = useState("");
 
+  const handleChange = (event) => {
+    console.log(event.target.value);
+    setInput(event.target.value);
+    filterDrinks(event.target.value);
+  };
   return (
     <form>
       <input
         type="text"
-        placeholder="Ingrediednt 1"
-        value={ingredient1.value}
-        name="ingredient1"
-        list="alcohol"
+        placeholder="Choose Ingredient"
+        // value={input}
+        name="Ingredient"
+        onChange={(event) => handleChange(event)}
       />
-      <datalist id="alcohol">
+      {/* <datalist id="alcohol">
         {alcohols.map((alcohol) => (
           <option key={alcohol} value={alcohol}>
             {alcohol}
@@ -26,10 +29,11 @@ const Form = ({ juices, alcohols, garnishes }) => {
       </datalist>
       <input
         type="text"
-        placeholder="Ingrediednt 2"
-        value={ingredient2.value}
-        name="ingredient2"
+        placeholder="Choose Juice"
+        value={juice.value}
+        name="Juice"
         list="juice"
+        onChange={(event) => handleChange(event)}
       />
 
       <datalist id="juice">
@@ -42,10 +46,11 @@ const Form = ({ juices, alcohols, garnishes }) => {
       </datalist>
       <input
         type="text"
-        placeholder="Ingrediednt 3"
-        value={ingredient3.value}
-        name="ingredient3"
+        placeholder="Choose Garnish"
+        value={garnish.value}
+        name="Garnish"
         list="garnish"
+        onChange={(event) => handleChange(event)}
       />
       <datalist id="garnish">
         <option key="none" value="None" />
@@ -55,6 +60,7 @@ const Form = ({ juices, alcohols, garnishes }) => {
           </option>
         ))}
       </datalist>
+      <button onClick={(event) => submitDrink(event)}>Find me a drink</button> */}
     </form>
   );
 };

@@ -1,60 +1,48 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 import Form from "../Form/Form";
+import CocktailContainer from "./CocktailContainer/CocktailContainer";
 
 function App() {
   const [cocktails, setCocktails] = useState([]);
   const [error, setError] = useState("");
-  const [juices, setJuices] = useState([]);
-  const [garnish, setGarnish] = useState([]);
-  const [alcohols, setAlcohols] = useState([]);
+  const [filteredCocktails, setFilteredCocktails] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:3001/api/vi/cocktails")
       .then((resp) => resp.json())
       .then((data) => setCocktails(data.cocktails))
+      // .then((data) => setFilteredCocktails(data.cocktails))
       .catch((err) => setError(err.message));
     // createInputs();
   }, []);
 
   useEffect(() => {
-    console.log(cocktails);
-    createInputs();
+    setFilteredCocktails(cocktails);
   }, [cocktails]);
 
-  const createInputs = () => {
-    let juices = [];
-    let garnish = [];
-    let alcohols = [];
-    cocktails.forEach((cocktail) => {
-      console.log(cocktail.ingredients);
+  const filterDrinks = (input) => {
+    console.log(input);
+    let woohoo = [];
+    const filter = cocktails.forEach((cocktail) => {
       cocktail.ingredients.forEach((ingredient) => {
-        if (ingredient.includes("Juice") && !juices.includes(ingredient)) {
-          juices.push(ingredient);
-        } else if (
-          ingredient.includes("Garnish") &&
-          !garnish.includes(ingredient)
-        ) {
-          garnish.push(ingredient);
-        } else if (
-          !alcohols.includes(ingredient) &&
-          !juices.includes(ingredient) &&
-          !garnish.includes(ingredient)
-        ) {
-          alcohols.push(ingredient);
+        if (input === "") {
+          woohoo = cocktails;
+        } else if (ingredient.includes(input) && !woohoo.includes(cocktail)) {
+          woohoo.push(cocktail);
         }
       });
     });
-    setJuices(juices);
-    setGarnish(garnish);
-    setAlcohols(alcohols);
+    console.log(woohoo);
+    setFilteredCocktails(woohoo);
   };
 
   return (
     <div className="App">
       <header className="App-header">
         <h1>Cocktail Creator</h1>
-        <Form juices={juices} alcohols={alcohols} garnishes={garnish} />
+        <Form cocktails={cocktails} filterDrinks={filterDrinks} />
+        <CocktailContainer filteredCocktails={filteredCocktails} />
       </header>
     </div>
   );
