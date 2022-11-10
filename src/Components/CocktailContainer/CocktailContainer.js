@@ -3,6 +3,7 @@ import "./CocktailContainer.css";
 import PropTypes from "prop-types";
 
 const CocktailContainer = ({ filteredCocktails }) => {
+  console.log(filteredCocktails);
   const allCocktails = filteredCocktails.map((cocktail) => {
     return (
       <div key={cocktail.id}>
@@ -10,7 +11,15 @@ const CocktailContainer = ({ filteredCocktails }) => {
       </div>
     );
   });
-  return <div className="cocktail-container">{allCocktails}</div>;
+
+  return !filteredCocktails.length ? (
+    <div className="error">
+      <h1>Sorry, no drinks with that ingredient.</h1>
+      <p>Search again</p>
+    </div>
+  ) : (
+    <div className="cocktail-container">{allCocktails}</div>
+  );
 };
 
 CocktailContainer.propTypes = {

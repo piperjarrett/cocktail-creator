@@ -7,12 +7,14 @@ const Cocktail = ({ cocktail }) => {
   });
   return (
     <div className="cocktail">
-      <img src={cocktail.image} />
-      <h4>{cocktail.name}</h4>
-      {ingredients}
-      <Link to={`/cocktails/${cocktail.name}`}>
-        <p>Read More</p>
-      </Link>
+      <img className="cocktail-image" src={cocktail.image} />
+      <div className="cocktail-details">
+        <h4>{cocktail.name}</h4>
+        {ingredients}
+        <Link to={`/cocktails/${cocktail.name}`}>
+          <button>Read More</button>
+        </Link>
+      </div>
     </div>
   );
 };

@@ -1,10 +1,29 @@
 .cocktail {
-    border: 2px solid;
+    border: 1rem solid;
+   border-color: #69758c;;
     margin: 2rem;
+    height: 41rem;
 }
 
-img {
+.cocktail-image {
     width: 12rem;
     height: 16rem;
-    margin: 2rem;
+    margin: 1rem;
 }
+
+.cocktail-details {
+    background-color: white;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+button {
+    background-color: #69758c;
+    width: 12rem;
+    height: 2rem;
+    color: #f8e4dc
+}
+
+p {
+    font-size: .8rem;
+}
+

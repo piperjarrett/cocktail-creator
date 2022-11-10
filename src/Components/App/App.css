@@ -1,44 +1,59 @@
+/* body {
+  font-family: serif;
+  font-display: ;
+} */
+
 .App {
   text-align: center;
+ font-family: monospace;
+  /* font-family: 'Courier New', Courier, monospace; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #69758c;
+  display: flex;
+  height: 10rem;
+}
+
+
+.logo {
+height: 10rem;
+width: 11rem;;
+margin-left: 1rem;
+}
+
+h2 {
+  border-bottom-color: #69758c;
+  border-bottom-width: 0.2rem;
+  border-bottom-style: solid ;
+  border-top-color: #69758c;
+  border-top-width: 0.2rem;
+  border-top-style: solid;
+  margin: 3rem;
+  padding: 1rem;
+}
+.search {
+  background: url('../../../assets/cheers.jpg');
+  padding: 2rem;
+  margin: 2rem;
+  color: white;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+h3 {
+  background-color: white;
+  opacity: .8;
+  color: black;
+  width: 18rem;
 }
 
-h1 {
-  color: white;
-}
-.App-link {
-  color: #61dafb;
+.input {
+  width: 5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 @keyframes spinner {
    
   0% {

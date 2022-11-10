@@ -49,7 +49,41 @@
   background-position : -96px 0;
 }
 
-h1{ 
-    color: black
+
+
+.cocktail-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    border: 1rem solid;
+    border-color: #69758c;;
 }
 
+.recipe-directions {
+    display: flex
+}
+
+.recipe, .directions {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #69758c;
+    height: 15rem;
+    margin: 2rem;
+    align-content: center;
+    padding: 2rem;
+    width: 13rem;
+    justify-content: center;
+    border-radius: 2rem;
+}
+
+.drink-name {
+    border-bottom-color: #69758c;
+    border-bottom-width: 0.2rem;
+    border-bottom-style: solid ;
+    border-top-color: #69758c;
+    border-top-width: 0.2rem;
+    border-top-style: solid;
+    margin: 3rem;
+    padding: 1rem;
+}
