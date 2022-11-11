@@ -12,7 +12,7 @@
     width: 50px;
     height: 50px;
     border: 10px solid #f3f3f3; /* Light grey */
-    border-top: 10px solid #383636; /* Black */
+    border-top: 10px solid #2D3746; 
     border-radius: 50%;
     animation: spinner 1.5s linear infinite;
   }
@@ -57,17 +57,18 @@
     align-items: center;
     color: black;
     border: 1rem solid;
-    border-color: #69758c;;
+    border-color: #f3f3f3;;
 }
 
 .recipe-directions {
-    display: flex
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .recipe, .directions {
     display: flex;
     flex-wrap: wrap;
-    background-color: #69758c;
+    background-color: #f3f3f3;
     height: 15rem;
     margin: 2rem;
     align-content: center;
@@ -78,12 +79,13 @@
 }
 
 .drink-name {
-    border-bottom-color: #69758c;
+    border-bottom-color: #f3f3f3;
     border-bottom-width: 0.2rem;
     border-bottom-style: solid ;
-    border-top-color: #69758c;
+    border-top-color: #f3f3f3;
     border-top-width: 0.2rem;
     border-top-style: solid;
     margin: 3rem;
     padding: 1rem;
+    color: #f3f3f3;
 }

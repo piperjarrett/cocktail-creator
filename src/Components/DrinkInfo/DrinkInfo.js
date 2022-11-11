@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import "./DrinkInfo.css";
 import PropTypes, { string } from "prop-types";
-import { ReactDOM } from "react";
 
 const DrinkInfo = ({ cocktailName }) => {
   const [oneCocktail, setOneCocktail] = useState({});

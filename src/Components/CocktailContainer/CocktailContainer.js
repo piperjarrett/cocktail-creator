@@ -3,7 +3,6 @@ import "./CocktailContainer.css";
 import PropTypes from "prop-types";
 
 const CocktailContainer = ({ filteredCocktails }) => {
-  console.log(filteredCocktails);
   const allCocktails = filteredCocktails.map((cocktail) => {
     return (
       <div key={cocktail.id}>

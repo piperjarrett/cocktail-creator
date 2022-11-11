@@ -1,6 +1,6 @@
 .cocktail {
     border: 1rem solid;
-   border-color: #69758c;;
+   border-color: #f3f3f3;
     margin: 2rem;
     height: 41rem;
 }
@@ -12,15 +12,16 @@
 }
 
 .cocktail-details {
-    background-color: white;
+    background-color: #2D3746;
     padding-bottom: 1rem;
     padding-top: 1rem;
+    color: #f3f3f3;
 }
 button {
-    background-color: #69758c;
+    background-color: #f3f3f3;
     width: 12rem;
     height: 2rem;
-    color: #f8e4dc
+    color: black
 }
 
 p {
