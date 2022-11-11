@@ -1,44 +1,69 @@
 import { useEffect, useState } from "react";
 import "./DrinkInfo.css";
 import PropTypes, { string } from "prop-types";
-import { ReactDOM } from "react";
 
 const DrinkInfo = ({ cocktailName }) => {
   const [oneCocktail, setOneCocktail] = useState({});
   const [error, setError] = useState("");
-  const [rating, setRating] = useState(oneCocktail.rating);
-  console.log(rating);
+  const [rating, setRating] = useState();
+
   useEffect(() => {
     fetch(`http://localhost:3001/api/vi/cocktails/${cocktailName}`)
       .then((resp) => resp.json())
       .then((data) => setOneCocktail(data))
-      .then((data) => setRating(oneCocktail.rating))
       .catch((err) => setError(err.message));
   }, []);
 
+  useEffect(() => {
+    setRating(oneCocktail.rating);
+  }, [oneCocktail]);
+
   const patchRequest = (event) => {
-    setRating(event.target.value);
-    fetch(`http://localhost:3001/api/vi/${oneCocktail.name}`, {
+    console.log("hello");
+    const newRating = {
+      id: oneCocktail.id,
+      name: oneCocktail.name,
+      ingredients: oneCocktail.ingredients,
+      recipe: oneCocktail.recipe,
+      directions: oneCocktail.directions,
+      image: oneCocktail.image,
+      rating: parseInt(event.target.value),
+    };
+
+    fetch(`http://localhost:3001/api/vi/cocktails/${oneCocktail.name}`, {
       method: "PUT",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify({
-        id: oneCocktail.id,
-        name: oneCocktail.name,
-        ingredients: oneCocktail.ingredients,
-        recipe: oneCocktail.recipe,
-        directions: oneCocktail.directions,
-        image: oneCocktail.image,
-        rating: event.target.value,
-      }),
+      body: JSON.stringify(newRating),
     });
+
+    fetch(`http://localhost:3001/api/vi/cocktails/${cocktailName}`)
+      .then((resp) => resp.json())
+      .then((data) => setOneCocktail(data))
+      .catch((err) => setError(err.message));
+    window.location.reload(false);
   };
 
-  return (
+  return error ? (
+    <h1>Please try again Later!</h1>
+  ) : !oneCocktail ? (
+    <div className="spinner-container">
+      <div className="loading-spinner"></div>
+    </div>
+  ) : (
     <div className="cocktail-info">
-      <h1>{oneCocktail.name}</h1>
-      <img src={oneCocktail.image} />
-      <p>{oneCocktail.recipe}</p>
-      <p>{oneCocktail.directions}</p>
+      <h1 className="drink-name">{oneCocktail.name}</h1>
+      <img className="cocktail-image" src={oneCocktail.image} />
+      <div className="recipe-directions">
+        <div className="recipe">
+          <h4>Recipe:</h4>
+          <p>{oneCocktail.recipe}</p>
+        </div>
+        <div className="directions">
+          <h4>Directions:</h4>
+          <p>{oneCocktail.directions}</p>
+        </div>
+      </div>
+      <h4>Rate this cocktail!</h4>
       <div className="rating">
         <input
           id="rating1"

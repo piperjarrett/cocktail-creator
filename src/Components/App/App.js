@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import DrinkInfo from "../DrinkInfo/DrinkInfo";
 import PropTypes from "prop-types";
+import logo from "../../logo.png";
 
 function App() {
   const [cocktails, setCocktails] = useState([]);
@@ -45,6 +46,8 @@ function App() {
   };
 
   return error ? (
+    <h1>Sorry, something went wrong. Try again Later!</h1>
+  ) : !cocktails ? (
     <div className="spinner-container">
       <div className="loading-spinner"></div>
     </div>
@@ -53,7 +56,7 @@ function App() {
       <main className="App">
         <header className="App-header">
           <NavLink to="/" style={{ textDecoration: "none" }}>
-            <h1>Cocktail Creator</h1>
+            <img className="logo" src={logo} />
           </NavLink>
         </header>
         <Switch>
@@ -62,7 +65,11 @@ function App() {
             path="/"
             render={() => (
               <div className="home-page">
-                <Form cocktails={cocktails} filterDrinks={filterDrinks} />
+                <h2>Find Your Perfect Drink</h2>
+                <div className="search">
+                  <h3>Search To Enjoy Our Cocktails</h3>
+                  <Form cocktails={cocktails} filterDrinks={filterDrinks} />
+                </div>
                 <CocktailContainer filteredCocktails={filteredCocktails} />
               </div>
             )}
