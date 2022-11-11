@@ -1,0 +1,386 @@
+[
+    {
+        "id": "1",
+        "name": "Cosmopolitan",
+        "ingredients": [
+            "Absolut Citron",
+            "Cointreau",
+            "Lime Juice",
+            "Ocean Spray Cranberry",
+            "Garnish: Lemon Twist"
+        ],
+        "recipe": "1.5 ounces Absolut Citron, 3/4 ounce Cointreau, 3/4 ounce fresh lime juice, 3/4 ounce Ocean Spray Cranberry, Garnish: lemon twist",
+        "directions": "Combine all ingredients in a cocktail shaker with ice. Shake until cold and strain into a chilled coupe glass. Garnish with lemon twist.",
+        "image": "https://www.acouplecooks.com/wp-content/uploads/2019/12/Cosmopolitan-Cocktail-003.jpg",
+        "rating": "0"
+    },
+    {
+        "id": "2",
+        "name": "Long Island Iced Tea",
+        "ingredients": [
+            "Vodka",
+            "Rum",
+            "Tequila",
+            "Gin",
+            "Triple Sec",
+            "Simple Syrup",
+            "Lemon Juice",
+            "Cola",
+            "Garnish: Lemon Wedge"
+        ],
+        "recipe": "3/4 ounce vodka, 3/4 ounce rum, 3/4 ounce tequila, 3/4 ounce gin, 3/4 ounce triple sec, ½ ounce simple syrup, 1/2 ounce lemon juice, Cola, Garnish: lemon wedge.",
+        "directions": "Combine all ingredients in a tall glass with ice. Briefly stir to combine. Top with a splash of cola. Garnish with a lemon wedge.",
+        "image": "https://vinepair.com/wp-content/uploads/2021/05/longislandicedtea_card.jpg",
+        "rating": "0"
+    },
+    {
+        "id": "3",
+        "name": "Vodka Martini",
+        "ingredients": [
+            "Vodka",
+            "Dry Vermouth",
+            "Garnish: Lemon Twist"
+        ],
+        "recipe": "2 1/2 ounces vodka, 1/2 ounce dry vermouth, Lemon twist",
+        "directions": "Combine vodka and vermouth in a mixing glass. Stir with ice until chilled. Strain into a chilled coupe or Martini glass. Gently express a lemon peel over the top of the drink, then garnish with the lemon zest.",
+        "image": "https://www.liquor.com/thmb/SxSP0WYHOsUN6jaHQLBsFpNMaOM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/vodka-martini-720x720-primary-7bf9f33f067c4f81b53d8f1f73bdd4a2.jpg",
+        "rating": "0"
+    },
+    {
+        "id": "4",
+        "name": "Piña Colada",
+        "ingredients": [
+            "White Rum",
+            "Coconut Cream",
+            "Pineapple Juice",
+            "Garnish: Pineapple leaf"
+        ],
+        "recipe": "2 oz White Rum, 2 oz Coconut Cream, 2 oz Pineapple Juice, Pineapple leaf",
+        "directions": "Combine all ingredients, except pineapple leaf, in shaker. Add ice to fill. Shake vigorously, until shaker is frosted over. Fill hurricane glass with crushed ice. Strain cocktail into glass. Garnish with pineapple leaf and enjoy.",
+        "image": "https://vinepair.com/wp-content/uploads/2016/04/pina-colada-card.jpg",
+        "rating": "0"
+    },
+    {
+        "id": "5",
+        "name": "Gimlet",
+        "ingredients": [
+            "Gin",
+            "Lime",
+            "Simple Syrup"
+        ],
+        "recipe": "2 oz Gin, 3/4 oz Lime, 3/4 oz Simple syrup",
+        "directions": "Combine all ingredients in shaker tin. Add ice to small shaker tin. Shake vigorously, until tin is frosted over. Strain into chilled cocktail glass. Garnish with lime wheel (optional) and enjoy.",
+        "image": "https://www.acouplecooks.com/wp-content/uploads/2019/05/Gimlet-005.jpg",
+        "rating": "0"
+    },
+    {
+        "id": "6",
+        "name": "Bloody Mary",
+        "ingredients": [
+            "Vodka",
+            "Tomato Juice",
+            "Lemon Juice",
+            "Worcestershire",
+            "Pepper",
+            "Celery salt"
+        ],
+        "recipe": "2 oz Vodka, 5 oz Tomato juice, 1/2 oz Fresh lemon Juice, 1/2 oz Worcestershire, Pinch Pepper, Pinch Celery salt",
+        "directions": "Combine all ingredients in a Collins or highball glass. Add ice. Stir well. Garnish with lemon, celery, olives, (optional) and enjoy.",
+        "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/bloody-mary-a2983ba.jpg?quality=90&webp=true&resize=300,272",
+        "rating": "0"
+    },
+    {
+        "id": "7",
+        "name": "Paloma",
+        "ingredients": [
+            "Tequila",
+            "Lime Juice",
+            "Salt",
+            "Grapefruit Soda"
+        ],
+        "recipe": "2 ounces blanco tequila, 1 ounce fresh lime juice, 1 pinch of salt, Grapefruit soda to top",
+        "directions": "Combine tequila, lime juice, and salt in a shaker with ice. Shake until chilled. Strain into a highball filled with ice. Top with grapefruit soda. Garnish with a lime wheel (optional).",
+        "image": "https://cdn.loveandlemons.com/wp-content/uploads/2020/04/paloma-drink-580x748.jpg",
+        "rating": "0"
+    },
+    {
+        "id": "8",
+        "name": "Mojito",
+        "ingredients": [
+            "White Rum",
+            "Lime",
+            "Simple Syrup",
+            "Garnish: Mint Leaves"
+        ],
+        "recipe": "2 oz White Rum, 1 oz Lime, 3/4 oz Simple Syrup, 10 Mint leaves and mint sprig for garnish",
+        "directions": "Gently muddle mint leaves in Collins or highball glass, taking care not to break the leaves. Add remaining ingredients to the glass. Mix well. Add crushed ice. Garnish with mint sprig and enjoy.",
+        "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Mojito_EXPS_FT19_37188_F_0814_1-1.jpg?fit=700,1024",
+        "rating": "0"
+    },
+    {
+        "id": "9",
+        "name": "Espresso Martini",
+        "ingredients": [
+            "Vodka",
+            "Coffee Liqueur",
+            "Espresso",
+            "Simple Syrup",
+            "Garnish: Coffee Beans"
+        ],
+        "recipe": "1 ounce vodka, 3/4 ounce coffee liqueur, 1 1/4 ounces fresh espresso, 1/2 ounce simple syrup (1:1, sugar:water), Garnish: 3 coffee beans",
+        "directions": "Combine all ingredients in a mixing tin and shake vigorously with ice. Strain into a coupette glass. Garnish with three coffee beans.",
+        "image": "https://www.liquor.com/thmb/Eln5y_Movw7hd2WnHU0ZVsbQEiw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__liquor__2017__09__01105623__espresso-martini-720x720-recipe-Molly-909b41dfe98c4f49b65a319ae28dd51e.jpeg",
+        "rating": "0"
+    },
+    {
+        "id": "10",
+        "name": "Negroni",
+        "ingredients": [
+            "London Dry Gin",
+            "Sweet Vermouth",
+            "Campari",
+            "Garnish: Orange Twist"
+        ],
+        "recipe": "1 oz London Dry gin, 1 oz Sweet Vermouth, 1 oz Campari, Orange twist",
+        "directions": "Add all ingredients to a chilled rocks glass with ice. Stir until chilled. Garnish with an orange twist or wedge.",
+        "image": "https://www.acouplecooks.com/wp-content/uploads/2020/04/Negroni-Boulevardier-007.jpg",
+        "rating": "0"
+    },
+    {
+        "id": "11",
+        "name": "Old Fashioned",
+        "ingredients": [
+            "Bourbon",
+            "Simple Syrup",
+            "Angostura Bitters",
+            "Garnish: Orange Twist",
+            "Garnish: Lemon Twist"
+        ],
+        "recipe": "2 1/2 oz Bourbon, 1/2 oz simple syrup, 3 dash Angostura Bitters, 1 each Lemon and orange twist",
+        "directions": "Combine first three ingredients in a rocks glass. Stir ingredients. Add ice. Garnish with a lemon and orange twist and enjoy.",
+        "image": "https://www.simplyrecipes.com/thmb/1uY89KYA3P7bnGEj-aAhmDyHaj4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2020__01__Old-Fashioned-Cocktail-LEAD-1-d1f215fa53e644758cc93a219e0dc468.jpg",
+        "rating": "0"
+    },
+    {
+        "id": "12",
+        "name": "Margarita",
+        "ingredients": [
+            "Blanco Tequila",
+            "Lime Juice",
+            "Triple Sec"
+        ],
+        "recipe": "1 3/4 oz Blanco tequila, 1 oz Lime juice, 3/4 oz Triple Sec",
+        "directions": "Combine all ingredients in shaker tin. Add ice to small shaker tin. Shake vigorously. Strain into chilled rocks glass with a salt rim over fresh ice. Garnish with lime (optional) and enjoy.",
+        "image": "https://www.acouplecooks.com/wp-content/uploads/2020/03/Margarita-025.jpg",
+        "rating": "0"
+    },
+    {
+        "id": "13",
+        "name": "Sidecar",
+        "ingredients": [
+            "Brandy",
+            "Lemon",
+            "Triple Sec"
+        ],
+        "recipe": "1 3/4 oz Brandy, 1 oz Lemon, 3/4 oz Triple sec",
+        "directions": "Combine all ingredients in shaker tin Add ice to small shaker tin. Shake vigorously, until tin is frosted over. Strain into chilled cocktail glass, rimmed with sugar. Garnish with lemon twist (optional) and enjoy.",
+        "image": "https://www.acouplecooks.com/wp-content/uploads/2020/04/Sidecar-Cocktail-006.jpg",
+        "rating": "0"
+    },
+    {
+        "id": "14",
+        "name": "Blood and Sand",
+        "ingredients": [
+            "Scotch",
+            "Cherry Heering",
+            "Sweet Vermouth",
+            "Orange Juice",
+            "Lemon"
+        ],
+        "recipe": "3/4 oz Scotch, 3/4 oz Cherry heering, 3/4 oz Sweet vermouth, 3/4 oz Orange juice, 1/4 oz Lemon (Classically, not an ingredient)",
+        "directions": "Combine all ingredients in shaker tin. Add ice to small shaker tin. Shake vigorously, until tin is frosted over. Strain into chilled rocks glass with fresh ice. Garnish with a burnt orange twist (optional) and enjoy.",
+        "image": "https://vinepair.com/wp-content/uploads/2018/03/Blood-And-Sand-Recipe-card.jpg",
+        "rating": "0"
+    },
+    {
+        "id": "15",
+        "name": "The Last Word",
+        "ingredients": [
+            "Gin",
+            "Green Chartreuse",
+            "Maraschino Liqueur",
+            "Lime Juice"
+        ],
+        "recipe": "3/4 ounce gin, 3.4 ounce green Chartreuse, 3.4 ounce Maraschino liqueur, 3.4 ounce fresh lime juice",
+        "directions": "Combine ingredients in a cocktail shaker and shake with ice. Double-strain into a chilled coupe glass. Serve up.",
+        "image": "https://assets-prd.punchdrink.com/wp-content/uploads/2013/09/14171008/Article-Last-Word-Green-Chartreuse-Cocktail-Recipe-500x688.jpg",
+        "rating": "0"
+    },
+    {
+        "id": "16",
+        "name": "Painkiller",
+        "ingredients": [
+            "Navy Rum",
+            "Unsweetened Pineapple Juice",
+            "Orange Juice",
+            "Cream of Coconut"
+        ],
+        "recipe": "2 to 4 ounces of Navy Rum, 4 ounces unsweetened pineapple juice, 1 ounce freshly squeezed orange juice, 1 ounce cream of coconut",
+        "directions": "Combine ingredients in a cocktail shaker with plenty of crushed ice. Shake well, and then pour entire contents of the shaker into your glassware of choice. Top with generous sprinkle of nutmeg, and garnish with pineapple fronds and an orange wedge (optional).",
+        "image": "https://www.liquor.com/thmb/yEGRIs2TxX80YPGC8HMuw1ydHXQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/pain-killer-720x720-primary-v2-3da2392ce2cc4f1ba89ba29001465e63.jpg",
+        "rating": "0"
+    },
+    {
+        "id": "17",
+        "name": "Hanky-Panky",
+        "ingredients": [
+            "Gin",
+            "Sweet Vermouth",
+            "Fernet Branca",
+            "Garnish: Orange Twist"
+        ],
+        "recipe": "1 1/2 ounces gin, 1 1/2 ounces sweet vermouth, 2 dashes Fernet Branca, Garnish: orange twist",
+        "directions": "Add ingredients to a mixing glass with ice and stir until chilled. Strain into a coupe glass, express your orange twist, and garnish.",
+        "image": "https://assets-prd.punchdrink.com/wp-content/uploads/2021/10/15102837/Article-Fernet-Branca-Cocktail-Recipe-Hanky-Panky-500x688.jpg",
+        "rating": "0"
+    },
+    {
+        "id": "18",
+        "name": "Bellini",
+        "ingredients": [
+            "White Peach Purée",
+            "Prosecco"
+        ],
+        "recipe": "2 oz White Peach Purée, 4 oz Prosecco",
+        "directions": "Combine ingredients in a champagne flute. Enjoy.",
+        "image": "https://vinepair.com/wp-content/uploads/2018/03/Mimosa-Recipe-card.jpg",
+        "rating": "0"
+    },
+    {
+        "id": "19",
+        "name": "Aviation",
+        "ingredients": [
+            "Gin",
+            "Maraschino liqueur",
+            "Lemon Juice",
+            "Crème De Violette",
+            "Simple Syrup"
+        ],
+        "recipe": "1 1/2 ounce gin, 1/2 to 3/4 ounce Maraschino liqueur, 3/4 ounce fresh lemon juice, ¼ ounce crème de violette, 1/4 ounce simple syrup",
+        "directions": "Combine all ingredients in a cocktail shaker and fill with ice. Shake well, then double-strain into a chilled coupe. No garnish.",
+        "image": "https://vinepair.com/wp-content/uploads/2020/06/aviation_card.jpg",
+        "rating": "0"
+    },
+    {
+        "id": "20",
+        "name": "Vesper",
+        "ingredients": [
+            "Gin",
+            "Vodka",
+            "Lillet"
+        ],
+        "recipe": "2 oz Gin, 1 oz Vodka, 1/2 oz Lillet",
+        "directions": "Combine all ingredients in mixing glass with ice. Stir. Strain into chilled cocktail glass. Garnish with a thin lemon and orange (optional) and enjoy.",
+        "image": "https://www.acouplecooks.com/wp-content/uploads/2020/05/Vesper-Martini-009.jpg",
+        "rating": "0"
+    },
+    {
+        "id": "21",
+        "name": "Sazerac",
+        "ingredients": [
+            "Rye or Brandy",
+            "Demerara Syrup",
+            "Peychaud's Bitters",
+            "Garnish: Lemon Twist",
+            "Absinthe"
+        ],
+        "recipe": "3 oz Rye or Brandy, 1/2 oz Demerara syrup, 10 dashes Peychaud's Bitters, 1 ea Lemon twist, As needed Absinthe",
+        "directions": "Combine all ingredients in mixing glass with ice. Stir. Strain into chilled rocks glass rinsed with absinthe, with no ice. Garnish with lemon twist (optional) and enjoy.",
+        "image": "https://www.liquor.com/thmb/SDh21SAknRWbr0wKLyHyIxgmlII=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/original-sazerac-720x720-primary-85570828fe894c04a13bd414aaa130e8.jpg",
+        "rating": "0"
+    },
+    {
+        "id": "22",
+        "name": "Caipirinha",
+        "ingredients": [
+            "Cachaça",
+            "Lime",
+            "White Sugar"
+        ],
+        "recipe": "2 oz Cachaça, 1 ea Whole lime, in wedges, 2 tsp Extra fine white sugar",
+        "directions": "Combine all ingredients in rocks glass. Muddle. Top with crushed ice. Enjoy.",
+        "image": "https://www.oliviascuisine.com/wp-content/uploads/2020/09/caipirinha-683x1024.jpg",
+        "rating": "0"
+    },
+    {
+        "id": "23",
+        "name": "Mai Tai",
+        "ingredients": [
+            "Blendend Rum",
+            "Lime Juice",
+            "Orgeat Syrup",
+            "Orange Liqueur",
+            "Garnish: Mint Sprig"
+        ],
+        "recipe": "2 ounces blended rum, such as Appleton Estate Reserve Blend or Denizen Merchants Reserve, ¾ ounce lime juice, ¾ ounce orgeat syrup, ½ ounce orange liqueur, Mint sprig",
+        "directions": "Combine all ingredients, except mint, in a shaker. Add crushed ice and shake vigorously, until shaker is frosted over. Fill a double rocks glass with fresh crushed ice. Strain cocktail into glass. Garnish with mint sprig.",
+        "image": "https://www.momontimeout.com/wp-content/uploads/2022/02/mai-tai.jpeg",
+        "rating": "0"
+    },
+    {
+        "id": "24",
+        "name": "Americano",
+        "ingredients": [
+            "Campari",
+            "Sweet Vermouth",
+            "Soda"
+        ],
+        "recipe": "1 oz Campari, 1 oz Sweet vermouth, 2 oz Soda",
+        "directions": "Combine all ingredients in a rocks glass. Add ice. Garnish with orange wedge and enjoy.",
+        "image": "https://www.jocooks.com/wp-content/uploads/2011/08/americano-1-1-650x813.jpg",
+        "rating": "0"
+    },
+    {
+        "id": "25",
+        "name": "Moscow Mule",
+        "ingredients": [
+            "Vodka",
+            "Ginger Beer",
+            "Lime",
+            "Garnish: Lime Wedge"
+        ],
+        "recipe": "2 ounces vodka, 3 ounces ginger beer, Juice of half a lime, and lime wedge for garnish",
+        "directions": "Add vodka, ginger beer, and lime juice to a copper mug (or highball glass). Fill mug with crushed ice. Stir well. Garnish with lime wedge and enjoy.",
+        "image": "https://www.liquor.com/thmb/eV1GXL1KKZRxf9hSalEJBXJ3VPk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__liquor__2017__03__07152853__moscow-mule-720x720-recipe-61ce552013b04880901b2abfb63017fd.jpg",
+        "rating": "0"
+    },
+    {
+        "id": "26",
+        "name": "Aperol Spritz",
+        "ingredients": [
+            "Aperol",
+            "Prosecco",
+            "Club Soda",
+            "Garnish: Orange Wedge"
+        ],
+        "recipe": "2 ounces Aperol, 3 ounces Prosecco, Club soda to top, Orange wedge for garnish",
+        "directions": "Pour Aperol and Prosecco into a wine glass filled with ice. Top with soda. Stir gently to combine. Add garnish, if using.",
+        "image": "https://images.themodernproper.com/billowy-turkey/production/posts/2022/AperolSpritz_Shot3_69.jpg?w=2048&auto=compress%2Cformat&fit=crop&dm=1653614885&s=05bf1ba4379db6a938cf4c584cc3636a",
+        "rating": "0"
+    },
+    {
+        "id": "27",
+        "name": "Penicillin",
+        "ingredients": [
+            "Blended Scotch",
+            "Lemon Juice",
+            "Simple Syrup",
+            "Ginger",
+            "Smoky Scotch"
+        ],
+        "recipe": "2 ounces blended Scotch, such as Monkey Shoulder or Famous Grouse, 3/4 ounce fresh lemon juice, 3/4 ounce honey simple syrup, 4 nickel-sized slices of ginger, 1/4 ounce smoky Islay Scotch",
+        "directions": "Put ginger slices and honey syrup in the base of a shaker and gently muddle. Combine other ingredients (except Islay Scotch) and shake with ice. Double-strain into an ice-filled rocks glass. Float the Islay Scotch over the top of the drink by pouring it over a bar spoon for even distribution. Garnish with candied ginger on a cocktail pick (optional).",
+        "image": "https://vinepair.com/wp-content/uploads/2018/01/pen-card.jpg",
+        "rating": "0"
+    }
+]
