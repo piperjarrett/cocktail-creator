@@ -19,7 +19,6 @@ const DrinkInfo = ({ cocktailName }) => {
   }, [oneCocktail]);
 
   const patchRequest = (event) => {
-    console.log("hello");
     const newRating = {
       id: oneCocktail.id,
       name: oneCocktail.name,
@@ -34,18 +33,21 @@ const DrinkInfo = ({ cocktailName }) => {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(newRating),
-    });
+    }).catch((err) => setError(err.message));
 
     fetch(`http://localhost:3001/api/vi/cocktails/${cocktailName}`)
       .then((resp) => resp.json())
       .then((data) => setOneCocktail(data))
       .catch((err) => setError(err.message));
-    window.location.reload(false);
+    // window.location.reload(false);
   };
 
   return error ? (
-    <h1>Please try again Later!</h1>
-  ) : !oneCocktail ? (
+    <div>
+      <h1 className="error">Uh Oh, something went wrong.</h1>
+      <p className="error">Please try again Later!</p>
+    </div>
+  ) : !oneCocktail.id ? (
     <div className="spinner-container">
       <div className="loading-spinner"></div>
     </div>

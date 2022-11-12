@@ -46,7 +46,7 @@ function App() {
   };
 
   return error ? (
-    <h1>Sorry, something went wrong. Try again Later!</h1>
+    <h1 className="error">Sorry, something went wrong. Try again later!</h1>
   ) : !cocktails ? (
     <div className="spinner-container">
       <div className="loading-spinner"></div>
