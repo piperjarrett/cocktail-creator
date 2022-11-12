@@ -18,7 +18,7 @@ const DrinkInfo = ({ cocktailName }) => {
     setRating(oneCocktail.rating);
   }, [oneCocktail]);
 
-  const patchRequest = (event) => {
+  const patchRequest = async (event) => {
     const newRating = {
       id: oneCocktail.id,
       name: oneCocktail.name,
@@ -29,19 +29,19 @@ const DrinkInfo = ({ cocktailName }) => {
       rating: parseInt(event.target.value),
     };
 
-    fetch(`http://localhost:3001/api/vi/cocktails/${oneCocktail.name}`, {
+    await fetch(`http://localhost:3001/api/vi/cocktails/${oneCocktail.name}`, {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(newRating),
     }).catch((err) => setError(err.message));
 
-    fetch(`http://localhost:3001/api/vi/cocktails/${cocktailName}`)
+    await fetch(`http://localhost:3001/api/vi/cocktails/${cocktailName}`)
       .then((resp) => resp.json())
       .then((data) => setOneCocktail(data))
       .catch((err) => setError(err.message));
-    // window.location.reload(false);
+ 
   };
-
+  console.log(rating);
   return error ? (
     <div>
       <h1 className="error">Uh Oh, something went wrong.</h1>
