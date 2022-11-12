@@ -19,8 +19,8 @@ describe("dahsboard error handeling spec", () => {
   });
 });
 
-describe("dahsboard error handeling spec", () => {
-  it("should show an error message on the dink info page if there is an error", () => {
+describe("drink info error handeling spec", () => {
+  it("should show a loading symbol if one cocktail is being fetched", () => {
     cy.intercept(
       { url: "http://localhost:3001/api/vi/cocktails/Gimlet" },
       { forceNetworkRequest: true }
@@ -28,7 +28,7 @@ describe("dahsboard error handeling spec", () => {
     cy.visit("http://localhost:3000/cocktails/Gimlet");
     cy.get('div[class="loading-spinner"]').should("have.css", "animation");
   });
-  it("should show an error message on the dink info page if there is an error", () => {
+  it("should show an error message on the info page if there is an error", () => {
     cy.intercept(
       { url: "http://localhost:3001/api/vi/cocktails/Gimlet" },
       { statusCode: 404 }
@@ -43,7 +43,7 @@ describe("dahsboard error handeling spec", () => {
 });
 
 describe("dahsboard error handeling spec", () => {
-  it("should show an error message on the dink info page if there is an error", () => {
+  it("should show an error message if there was an issue rating the drink", () => {
     cy.intercept(
       { url: "http://localhost:3001/api/vi/cocktails/Gimlet" },
       { statusCode: 204 }
