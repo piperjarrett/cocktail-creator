@@ -4,3 +4,8 @@
     justify-content: center;
     margin: 3rem;
 }
+
+.error {
+    display: flex;
+    flex-direction: column;
+}
