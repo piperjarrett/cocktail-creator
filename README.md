@@ -1,4 +1,4 @@
-#  ❤️ Canine Cupid ❤️
+#  Cocktail Creator
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -17,7 +17,7 @@ If so, Cocktail Creator is a webpage to help you find that perfect drink.
 ## Links
 - [Project spec](https://frontend.turing.edu/projects/module-3/showcase.html)
 - [WireFrame](https://www.figma.com/file/21FJgKCDtgBfjyad5pcb6E/Untitled?node-id=0%3A1&t=OjxIo84SX4RC76Mb-0)
-- [Deployed Project]()
+- [Deployed Project](https://cocktail-creator.vercel.app/)
 
 ## Learning Goals 
 - demonstrate mastery of: 
