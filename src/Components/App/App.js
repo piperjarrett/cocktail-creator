@@ -44,10 +44,10 @@ function App() {
     });
     setFilteredCocktails(filteredDrinks);
   };
-
+  console.log(cocktails);
   return error ? (
     <h1 className="error">Sorry, something went wrong. Try again later!</h1>
-  ) : !cocktails ? (
+  ) : !cocktails.length ? (
     <div className="spinner-container">
       <div className="loading-spinner"></div>
     </div>
@@ -66,6 +66,7 @@ function App() {
             render={() => (
               <div className="home-page">
                 <h2>Find Your Perfect Drink</h2>
+
                 <div className="search">
                   <h3>Search To Enjoy Our Cocktails</h3>
                   <Form cocktails={cocktails} filterDrinks={filterDrinks} />
