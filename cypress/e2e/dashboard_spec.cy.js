@@ -39,15 +39,15 @@ describe("dashboard spec", () => {
   });
   it("should filter the cards when a user types in the form", () => {
     cy.get('input[name="Ingredient"]').type("lime");
-    cy.get(".cocktail-container > :nth-child(5)")
+    cy.get(".cocktail-container > :nth-child(2)")
       .contains("Gimlet")
-      .get(".cocktail-container > :nth-child(5)")
+      .get(".cocktail-container > :nth-child(2)")
       .contains("Gin")
-      .get(".cocktail-container > :nth-child(5)")
+      .get(".cocktail-container > :nth-child(2)")
       .contains("Lime")
-      .get(".cocktail-container > :nth-child(5)")
+      .get(".cocktail-container > :nth-child(2)")
       .contains("Simple Syrup")
-      .get(".cocktail-container > :nth-child(5)")
+      .get(".cocktail-container > :nth-child(2)")
       .contains("Read More");
   });
 });
