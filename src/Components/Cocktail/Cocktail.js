@@ -9,7 +9,7 @@ const Cocktail = ({ cocktail }) => {
     <div className="cocktail">
       <img className="cocktail-image" src={cocktail.image} />
       <div className="cocktail-details">
-        <h4>{cocktail.name}</h4>
+        <h4 className="cocktail-name">{cocktail.name}</h4>
         {ingredients}
         <Link to={`/cocktails/${cocktail.name}`}>
           <button>Read More</button>
