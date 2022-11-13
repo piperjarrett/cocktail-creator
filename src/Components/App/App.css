@@ -1,13 +1,9 @@
-/* body {
-  font-family: serif;
-  font-display: ;
-} */
+
 
 .App {
   text-align: center;
  font-family: monospace;
  background-color: #2D3746;
-  /* font-family: 'Courier New', Courier, monospace; */
 }
 
 
@@ -15,12 +11,6 @@
   background-color: #2D3746;
   display: flex;
   height: 10rem;
-  /* border-left-color: #f3f3f3;
-    border-left-style: solid;
-    border-left-width: 1rem;
-    border-right-color: #f3f3f3;
-    border-right-style: solid;
-    border-right-width: 1rem; */
 }
 
 
