@@ -2,7 +2,7 @@ import cocktails from "../fixtures/cocktailsdata.json";
 
 describe("dashboard spec", () => {
   beforeEach(() => {
-    cy.intercept("http://localhost:3001/api/vi/cocktails", {
+    cy.intercept("https://cocktail-api-flax.vercel.app/api/vi/cocktails/", {
       cocktails,
     }).as("cocktails");
     cy.visit("http://localhost:3000/");
@@ -39,18 +39,15 @@ describe("dashboard spec", () => {
   });
   it("should filter the cards when a user types in the form", () => {
     cy.get('input[name="Ingredient"]').type("lime");
-    cy.get(".cocktail-container > :nth-child(2)")
+    cy.get(".cocktail-container > :nth-child(5)")
       .contains("Gimlet")
-      .get(".cocktail-container > :nth-child(2)")
+      .get(".cocktail-container > :nth-child(5)")
       .contains("Gin")
-      .get(".cocktail-container > :nth-child(2)")
+      .get(".cocktail-container > :nth-child(5)")
       .contains("Lime")
-      .get(".cocktail-container > :nth-child(2)")
+      .get(".cocktail-container > :nth-child(5)")
       .contains("Simple Syrup")
-      .get(".cocktail-container > :nth-child(2)")
-      .contains("Read More")
-      .click()
-      .url()
-      .should("include", "http://localhost:3000/cocktails/Gimlet");
+      .get(".cocktail-container > :nth-child(5)")
+      .contains("Read More");
   });
 });
