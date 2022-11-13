@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+#  ❤️ Canine Cupid ❤️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+- [Introduction](#introduction)
+- [Links](#links)
+- [Learning Goals](#learning-goals)
+- [Features](#features)
+- [Setup](#setup)
+- [Future Additions](#future-additions)
+- [Technologies](#technologies)
+- [Contributors](#contributors)
 
-## Available Scripts
+## Introduction
+Have you ever had a couple of ingredients for a coctktail but never knew what to make, or been a bartender and have someone tell you suprise you with a drink that has Vodka? 
+If so, Cocktail Creator is a webpage to help you find that perfect drink.
 
-In the project directory, you can run:
+## Links
+- [Project spec](https://frontend.turing.edu/projects/module-3/showcase.html)
+- [WireFrame](https://www.figma.com/file/21FJgKCDtgBfjyad5pcb6E/Untitled?node-id=0%3A1&t=OjxIo84SX4RC76Mb-0)
+- [Deployed Project]()
 
-### `npm start`
+## Learning Goals 
+- demonstrate mastery of: 
+  - React
+  - Router
+  - Asynchronus JavaScript
+  - End to end testing with Cypress
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
+Visit the homepage and search a specific ingredient you want in your drink! The webpage will automatically filter and display which drinks contain that ingredient. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Coctail_Creator_Homepage](https://media3.giphy.com/media/p1KFnSODvEm1Riloro/giphy.gif?cid=790b761190eeac1930b2185e49c4f9cdab7bebdd444560ef&rid=giphy.gif&ct=g)
 
-### `npm test`
+You are also able to see the directions and recipe for a drink you want! Rate this drink from 1-5 stars so others who visit the app will now how tasty it was.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Drink_info](https://media0.giphy.com/media/NhxCRppDN6eDzfsYud/giphy.gif?cid=790b76112eb709a3ef3dce5df599c722a48c669c3e6dc577&rid=giphy.gif&ct=g)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Setup
+1. Fork this repo - on the top right corner of this page, click the **Fork** button. 
+2. Clone down the forked repo. To rename your project you can use an optional argument when you run git clone (you replace the [...] with the terminal command arguments): `git clone [remote-address] [what you want to name the repo]`
+3. Once you have cloned the repo, change into the directory and install the project dependencies. Run `npm install` to install project dependencies.
+4. Run `npm start` in the terminal to see the page running in your browser on `http://localhost:3000/`. `Control + C` is the command to stop running the local server.  Closing the terminal without stopping the server first could allow the server to continue to run in the background and cause problems. This command is not specific to Webpack; make note of it for future use. 
+7. Enjoy!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Future Additions
+- Adding a form that allows user to add recipes/drinks.
+- Allowing user to favorite drinks
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies
+This project used React, React Router, and CSS. Cypress Testing was also used for End to End testing. 
 
-### `npm run eject`
+## Contributors
+This project was built by: 
+- [Piper Jarrett](https://github.com/piperjarrett)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
