@@ -8,7 +8,9 @@ const DrinkInfo = ({ cocktailName }) => {
   const [rating, setRating] = useState();
 
   useEffect(() => {
-    fetch(`http://localhost:3001/api/vi/cocktails/${cocktailName}`)
+    fetch(
+      `https://cocktail-api-flax.vercel.app/api/vi/cocktails/${cocktailName}`
+    )
       .then((resp) => resp.json())
       .then((data) => setOneCocktail(data))
       .catch((err) => setError(err.message));
@@ -29,19 +31,25 @@ const DrinkInfo = ({ cocktailName }) => {
       rating: parseInt(event.target.value),
     };
 
-    await fetch(`http://localhost:3001/api/vi/cocktails/${oneCocktail.name}`, {
-      method: "PUT",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify(newRating),
-    }).catch((err) => setError(err.message));
+    await fetch(
+      `https://cocktail-api-flax.vercel.app/api/vi/cocktails/${cocktailName}`,
+      {
+        method: "PUT",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(newRating),
+      }
+    ).catch((err) => setError(err.message));
 
-    await fetch(`http://localhost:3001/api/vi/cocktails/${cocktailName}`)
+    await fetch(
+      `https://cocktail-api-flax.vercel.app/api/vi/cocktails/${cocktailName}`
+    )
       .then((resp) => resp.json())
       .then((data) => setOneCocktail(data))
-      .catch((err) => setError(err.message));
- 
+
+      .catch((err) => setError(err));
   };
-  console.log(rating);
+
+
   return error ? (
     <div>
       <h1 className="error">Uh Oh, something went wrong.</h1>
@@ -66,14 +74,15 @@ const DrinkInfo = ({ cocktailName }) => {
         </div>
       </div>
       <h4>Rate this cocktail!</h4>
-      <div className="rating">
+      <form className="rating">
         <input
           id="rating1"
           type="radio"
           name="rating"
           value="1"
           checked={rating >= 1 ? true : false}
-          onChange={(event) => patchRequest(event)}
+          onClick={(event) => patchRequest(event)}
+          onChange={() => {}}
         />
         <label htmlFor="rating1"></label>
         <input
@@ -81,8 +90,9 @@ const DrinkInfo = ({ cocktailName }) => {
           type="radio"
           name="rating"
           value="2"
-          onChange={(event) => patchRequest(event)}
           checked={rating >= 2 ? true : false}
+          onClick={(event) => patchRequest(event)}
+          onChange={() => {}}
         />
         <label htmlFor="rating2"></label>
         <input
@@ -91,7 +101,8 @@ const DrinkInfo = ({ cocktailName }) => {
           name="rating"
           value="3"
           checked={rating >= 3 ? true : false}
-          onChange={(event) => patchRequest(event)}
+          onClick={(event) => patchRequest(event)}
+          onChange={() => {}}
         />
         <label htmlFor="rating3"></label>
         <input
@@ -100,7 +111,8 @@ const DrinkInfo = ({ cocktailName }) => {
           name="rating"
           value="4"
           checked={rating >= 4 ? true : false}
-          onChange={(event) => patchRequest(event)}
+          onClick={(event) => patchRequest(event)}
+          onChange={() => {}}
         />
         <label htmlFor="rating4"></label>
         <input
@@ -108,11 +120,12 @@ const DrinkInfo = ({ cocktailName }) => {
           type="radio"
           name="rating"
           value="5"
-          checked={rating === 5 ? false : false}
-          onChange={(event) => patchRequest(event)}
+          checked={rating >= 5 ? true : false}
+          onClick={(event) => patchRequest(event)}
+          onChange={() => {}}
         />
         <label htmlFor="rating5"></label>
-      </div>
+      </form>
     </div>
   );
 };

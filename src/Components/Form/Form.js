@@ -8,7 +8,6 @@ const Form = ({ filterDrinks }) => {
   };
 
   const onKeyDownHandler = (event) => {
-    console.log(event.which);
     if (event.keyCode === 13 || event.which === 13) {
       event.preventDefault();
       return false;

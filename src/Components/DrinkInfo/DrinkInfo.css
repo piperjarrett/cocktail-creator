@@ -76,6 +76,7 @@
     width: 13rem;
     justify-content: center;
     border-radius: 2rem;
+    color: black
 }
 
 .drink-name {
@@ -95,8 +96,4 @@
   justify-content: center;
   color: #f3f3f3;
   align-items: center;
-}
-
-h4 {
-  color: #f3f3f3;
 }

@@ -1,6 +1,6 @@
 describe("empty spec", () => {
   beforeEach(() => {
-    cy.intercept("GET", "http://localhost:3001/api/vi/cocktails/Gimlet", {
+    cy.intercept("GET", "https://cocktail-api-flax.vercel.app/api/vi/cocktails/Gimlet", {
       id: "5",
       name: "Gimlet",
       ingredients: ["Gin", "Lime", "Simple Syrup"],
@@ -32,7 +32,7 @@ describe("empty spec", () => {
     );
   });
   it("should allow a user to rate the drink", () => {
-    cy.intercept("PUT", "http://localhost:3001/api/vi/cocktails/Gimlet", {
+    cy.intercept("PUT", "https://cocktail-api-flax.vercel.app/api/vi/cocktails/Gimlet", {
       id: "5",
       name: "Gimlet",
       ingredients: ["Gin", "Lime", "Simple Syrup"],
@@ -43,7 +43,7 @@ describe("empty spec", () => {
         "https://www.acouplecooks.com/wp-content/uploads/2019/05/Gimlet-005.jpg",
       rating: "2",
     });
-    cy.intercept("GET", "http://localhost:3001/api/vi/cocktails/Gimlet", {
+    cy.intercept("GET", "https://cocktail-api-flax.vercel.app/api/vi/cocktails/Gimlet", {
       id: "5",
       name: "Gimlet",
       ingredients: ["Gin", "Lime", "Simple Syrup"],

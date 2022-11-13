@@ -18,7 +18,7 @@ function App() {
   const [filteredCocktails, setFilteredCocktails] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/api/vi/cocktails")
+    fetch("https://cocktail-api-flax.vercel.app/api/vi/cocktails")
       .then((resp) => resp.json())
       .then((data) => setCocktails(data.cocktails))
       .catch((err) => setError(err.message));
