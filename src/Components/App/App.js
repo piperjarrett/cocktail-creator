@@ -20,13 +20,13 @@ function App() {
   useEffect(() => {
     fetch("https://cocktail-api-flax.vercel.app/api/vi/cocktails")
       .then((resp) => resp.json())
-      .then((data) => setCocktails(data.cocktails))
+      .then((data) => {
+        setFilteredCocktails(data.cocktails);
+        setCocktails(data.cocktails);
+      })
+
       .catch((err) => setError(err.message));
   }, []);
-
-  useEffect(() => {
-    setFilteredCocktails(cocktails);
-  }, [cocktails]);
 
   const filterDrinks = (input) => {
     let filteredDrinks = [];
@@ -44,7 +44,7 @@ function App() {
     });
     setFilteredCocktails(filteredDrinks);
   };
-  console.log(cocktails);
+
   return error ? (
     <h1 className="error">Sorry, something went wrong. Try again later!</h1>
   ) : !cocktails.length ? (
@@ -79,6 +79,15 @@ function App() {
             path="/cocktails/:cocktail"
             render={({ match }) => (
               <DrinkInfo cocktailName={match.params.cocktail} />
+            )}
+          />
+          <Route
+            path="*"
+            render={() => (
+              <div className="invalid-url">
+                <h1>Invlaid URL</h1>
+                <p>Click the logo to go home!</p>
+              </div>
             )}
           />
         </Switch>

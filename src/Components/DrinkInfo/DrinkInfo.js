@@ -12,13 +12,13 @@ const DrinkInfo = ({ cocktailName }) => {
       `https://cocktail-api-flax.vercel.app/api/vi/cocktails/${cocktailName}`
     )
       .then((resp) => resp.json())
-      .then((data) => setOneCocktail(data))
+      .then((data) => {
+        setOneCocktail(data);
+        setRating(data.rating);
+      })
       .catch((err) => setError(err.message));
   }, []);
 
-  useEffect(() => {
-    setRating(oneCocktail.rating);
-  }, [oneCocktail]);
 
   const patchRequest = async (event) => {
     const newRating = {
@@ -44,11 +44,13 @@ const DrinkInfo = ({ cocktailName }) => {
       `https://cocktail-api-flax.vercel.app/api/vi/cocktails/${cocktailName}`
     )
       .then((resp) => resp.json())
-      .then((data) => setOneCocktail(data))
+      .then((data) => {
+        setOneCocktail(data);
+        setRating(data.rating);
+      })
 
       .catch((err) => setError(err));
   };
-
 
   return error ? (
     <div>
